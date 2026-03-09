@@ -37,19 +37,18 @@ const Signup = () => {
     <div className="min-h-screen flex flex-col">
       <div className="flex-1 flex">
         <div className="hidden lg:flex lg:w-1/2 bg-secondary items-center justify-center p-12 relative overflow-hidden">
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute top-20 right-20 w-72 h-72 rounded-full bg-primary blur-3xl" />
-            <div className="absolute bottom-40 left-10 w-96 h-96 rounded-full bg-primary blur-3xl" />
+          <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/src/assets/hero-bg.jpg')" }}>
+            <div className="absolute inset-0 bg-black/40" />
           </div>
-          <div className="relative z-10 text-center space-y-6">
-            <div className="inline-flex items-center gap-3 bg-primary/10 border border-primary/20 rounded-2xl px-6 py-3">
-              <Wrench className="w-10 h-10 text-primary" />
-              <span className="text-3xl font-bold text-secondary-foreground">TireFleet</span>
+          <div className="relative z-10 text-center space-y-6 text-white">
+            <div className="inline-flex items-center gap-3 bg-white/10 border border-white/20 rounded-2xl px-6 py-3">
+              <Wrench className="w-10 h-10 text-white" />
+              <span className="text-3xl font-bold">TireFleet</span>
             </div>
-            <h2 className="text-4xl font-extrabold text-secondary-foreground leading-tight">
+            <h2 className="text-4xl font-extrabold leading-tight">
               Join the Fleet<br />Start Today
             </h2>
-            <p className="text-secondary-foreground/60 text-lg max-w-md">
+            <p className="text-white/80 text-lg max-w-md">
               Whether you're ordering tires & parts or delivering them, we've got you covered.
             </p>
           </div>

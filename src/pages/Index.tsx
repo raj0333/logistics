@@ -10,6 +10,7 @@ import heroBg from "@/assets/hero-bg.jpg";
 
 const useCountUp = (end: number, duration = 2000) => {
   const [count, setCount] = useState(0);
+  
   const [started, setStarted] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -173,21 +174,31 @@ const TestimonialSlider = () => {
 const Index = () => {
   return (
     <div className="min-h-screen bg-background flex flex-col">
-      {/* Nav */}
-      <nav className="absolute top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 max-w-7xl mx-auto w-full">
-        <div className="flex items-center gap-2">
-          <Wrench className="w-7 h-7 text-primary" />
-          <span className="text-xl font-bold text-white">TireFleet</span>
-        </div>
-        <div className="flex items-center gap-3">
-          <Link to="/login">
-            <Button variant="ghost" className="text-white hover:bg-white/10">Sign In</Button>
-          </Link>
-          <Link to="/signup">
-            <Button variant="hero">Get Started</Button>
-          </Link>
-        </div>
-      </nav>
+      {/* Sticky Header */}
+      <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50 shadow-sm">
+        <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <Wrench className="w-7 h-7 text-primary" />
+            <span className="text-xl font-bold text-foreground">TireFleet</span>
+          </div>
+          <div className="hidden md:flex items-center gap-6">
+            {/* Menu items removed as requested */}
+          </div>
+          <div className="flex items-center gap-3">
+            <Link to="/login">
+              <Button 
+                variant="ghost" 
+                className="text-foreground hover:text-orange-500 bg-white/10 border-2 border-orange-400/50 hover:border-orange-400 hover:bg-orange-400/20 transition-all duration-300 hover:shadow-[0_0_15px_rgba(251,146,60,0.4)] hover:scale-105"
+              >
+                Sign In
+              </Button>
+            </Link>
+            <Link to="/signup">
+              <Button variant="hero">Get Started</Button>
+            </Link>
+          </div>
+        </nav>
+      </header>
 
       {/* Hero with background image */}
       <section
