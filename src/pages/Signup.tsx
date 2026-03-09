@@ -77,7 +77,7 @@ const Signup = () => {
                     <SelectItem value="customer">🏪 Customer / Workshop</SelectItem>
                     <SelectItem value="driver">🚛 Fleet Driver</SelectItem>
                   </SelectContent>
-                </Select>
+                </Select>   
               </div>
 
               <div className="space-y-2">
