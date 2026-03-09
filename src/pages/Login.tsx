@@ -37,7 +37,7 @@ const Login = () => {
       <div className="flex-1 flex">
         <div className="hidden lg:flex lg:w-1/2 bg-secondary items-center justify-center p-12 relative overflow-hidden">
           <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/src/assets/hero-bg.jpg')" }}>
-            <div className="absolute inset-0 bg-black/40" />    
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-primary/10 to-transparent" />
           </div>
           <div className="relative z-10 text-center space-y-6 text-white">
             <div className="inline-flex items-center gap-3 bg-white/10 border border-white/20 rounded-2xl px-6 py-3">
